@@ -72,8 +72,8 @@ def index():
             uri = "mongodb+srv://saimanas:saimanas@cluster0.ohitfzf.mongodb.net/?retryWrites=true&w=majority"
             # Create a new client and connect to the server
             client = MongoClient(uri)
-            db=client['scrapper_eng_pwskills']
-            coll_pw_eng=db['scraper_pwskills_eng']
+            db=client['web_scrapper']
+            coll_pw_eng=db['scraper_flipkart']
             coll_pw_eng.insert_many(reviews)
             
 
